@@ -1,0 +1,13 @@
+1.mysql jpa 配置
+    实体的创建，id值为Long类型
+2.template 下的文件的配置
+3.热部署 shift + ctrl + alt + /        running
+4. fastJson配置, 使对象Json格式化
+@JSONField(serialize=false) // 此处在以json格式放回界面时不显示数值，原因是受到httpMessage的配置影响
+    时间格式化
+
+5 使用拦截器：1，创建拦截器，2.向springboot中注册拦截器
+
+6.SpringBoot内置SpringMvc静态文件地址修改
+一般的项目都会配置登录拦截器，那如果我们的image、css、js是不是也会被拦截器拦截呢？
+答案是肯定的，当然也不是必然的。我们在配置拦截器的拦截路径时可以过滤掉静态文件的路径规则。

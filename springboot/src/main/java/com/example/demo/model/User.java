@@ -1,6 +1,7 @@
 package com.example.demo.model;
 
 import com.alibaba.fastjson.annotation.JSONField;
+import com.example.demo.base.BaseEntity;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import javax.persistence.*;
@@ -14,7 +15,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "t_user")
-public class User implements Serializable {
+public class User extends BaseEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
